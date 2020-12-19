@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5FF"
+    android:orientation="vertical"
+    tools:context=".sqlActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/weatherIcon3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.047"
+            app:srcCompat="@drawable/iconfinder_cloudy_2995001" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/city3"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#575757" />
+
+            <TextView
+                android:id="@+id/temp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#575757" />
+
+            <TextView
+                android:id="@+id/humid3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#575757" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sqlTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="SQL Database"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/idLabel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="ID:"
+                android:textColor="#575757"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/idSqlEdit"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="e.g. 5, 6, 7"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fNameLabel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="First Name:"
+                android:textColor="#575757"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fnameSqlEdit"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="e.g. Banan"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/lnameLabel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Last Name:"
+                android:textColor="#575757"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/lnameSqlEdit"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="e.g. AlBatati"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/phoneLabel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:textColor="#575757"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/phoneSqlEdit"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="e.g. 1234567890"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/emailLabel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textColor="#575757"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/emailSqlEdit"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="alfaisal@alfaisal.edu"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/updateSqlButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:background="#FFFFFF"
+            android:text="UPDATE" />
+
+        <Button
+            android:id="@+id/insertSqlButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:background="#FFFFFF"
+            android:text="INSERT" />
+
+        <Button
+            android:id="@+id/delSqlButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:background="#FFFFFF"
+            android:text="DELETE" />
+
+        <Button
+            android:id="@+id/readSqlButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:text="Read" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/findSqlButton"
+            android:layout_width="168dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="1dp"
+            android:background="#FFFFFF"
+            android:text="Find and Insert \nfrom Firebase" />
+
+        <Button
+            android:id="@+id/sqlListButton"
+            android:layout_width="169dp"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            android:text="View \nSQL List" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="71dp"
+            android:layout_height="123dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/iconfinder_sql" />
+
+        <ImageView
+            android:id="@+id/homeImg2"
+            android:layout_width="128dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/iconfinder_home"
+            app:tint="#51000000" />
+    </LinearLayout>
+
+</LinearLayout>

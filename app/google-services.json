@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "704152314823",
+    "firebase_url": "https://banan-181195-default-rtdb.firebaseio.com",
+    "project_id": "banan-181195",
+    "storage_bucket": "banan-181195.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704152314823:android:19de2f6e537165adb46fe2",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704152314823-87bbupfgadabb5k73v16kp5aq22hj8kq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finalproject",
+            "certificate_hash": "b2612679aedb9a7d4a9d87ea27fd9a2be04f28a4"
+          }
+        },
+        {
+          "client_id": "704152314823-dnuj2l8vipn9mtbffeelai528vk4r9ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0Ve--1m8WG7JnY51ZJJhBCKFlE1VfYG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704152314823-dnuj2l8vipn9mtbffeelai528vk4r9ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
